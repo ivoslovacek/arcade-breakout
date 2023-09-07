@@ -2,8 +2,11 @@ CFLAGS = -lSDL2 -lSDL2_ttf -Ilib -lSDL2_image -lpthread
 OBJ_PATH = obj
 OBJ_FILES = $(wildcard $(OBJ_PATH)/*.o)
 
-output: obj/main.o obj/events.o obj/render.o obj/collisions.o obj/data.o obj/audio.o
+output: $(OBJ_PATH) obj/main.o obj/events.o obj/render.o obj/collisions.o obj/data.o obj/audio.o
 	gcc $(OBJ_FILES) -o bin/breakout $(CFLAGS) 
+
+$(OBJ_PATH):
+	mkdir obj
 
 obj/main.o: src/main.c
 	gcc -o obj/main.o -c src/main.c $(CFLAGS) 
@@ -24,4 +27,5 @@ obj/audio.o: src/audio.c lib/audio.h
 	gcc -o obj/audio.o -c src/audio.c $(CFLAGS)
 
 clean:
-	rm obj/*.o
+	rm -rf obj
+	rm bin/breakout
