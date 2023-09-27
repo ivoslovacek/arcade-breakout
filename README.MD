@@ -2,7 +2,7 @@
 
 ## Kompilace
 
-Program se kompiluje pomocí poskytnutého Makefile souboru, pro kompilaci jsou zapotřebí knihovny [SDL2](https://www.libsdl.org/), [SDL_image](https://wiki.libsdl.org/SDL_image/FrontPage) a [SDL2_TTF](https://wiki.libsdl.org/SDL_image/FrontPage) a kompilátor [GCC](https://gcc.gnu.org/):
+Program se kompiluje pomocí poskytnutého Makefile souboru, pro kompilaci jsou zapotřebí knihovny [SDL2](https://www.libsdl.org/), [SDL_image](https://wiki.libsdl.org/SDL_image/FrontPage) a [SDL2_TTF](https://wiki.libsdl.org/SDL2_ttf/FrontPage) a kompilátor [GCC](https://gcc.gnu.org/):
 
 ```bash
 make
