@@ -6,7 +6,7 @@ output: $(OBJ_PATH) obj/main.o obj/events.o obj/render.o obj/collisions.o obj/da
 	gcc $(OBJ_FILES) -o bin/breakout $(CFLAGS) 
 
 $(OBJ_PATH):
-	mkdir obj
+	mkdir -p obj
 
 obj/main.o: src/main.c
 	gcc -o obj/main.o -c src/main.c $(CFLAGS) 
