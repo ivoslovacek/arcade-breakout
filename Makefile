@@ -1,4 +1,4 @@
-CFLAGS = -lSDL2 -lSDL2_ttf -Ilib -lSDL2_image -lpthread
+CFLAGS = -lSDL2 -lSDL2_ttf -Ilib -lSDL2_image -lpthread -O3
 OBJ_PATH = obj
 OBJ_FILES = $(wildcard $(OBJ_PATH)/*.o)
 
